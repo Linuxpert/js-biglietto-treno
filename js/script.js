@@ -21,6 +21,8 @@ if (age < 18) {
 } else if (age > 65) {
     //se maggiore di 65 anni 40% sconto
     pay = fullTicket - (fullTicket * 0.4);
+} else {
+    pay = fullTicket
 }
 
 document.getElementById("ticket").innerHTML = `${"il tuo biglietto costa: " + pay.toFixed(2) + "€"}`
